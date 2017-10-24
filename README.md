@@ -1,7 +1,4 @@
 Name: Xintong (Robert) Wen  
-Course: CS 61B "Data Structures"  
-Semester: Spring 2017  
-Instructor: Joshua Hug  
 Additional Course Info: http://datastructur.es/sp17/about.html
 
 ## Course Description
