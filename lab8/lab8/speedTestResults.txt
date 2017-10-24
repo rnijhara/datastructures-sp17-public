@@ -1,0 +1,78 @@
+InsertRandomSpeedTest:
+
+ This program inserts random Strings of length L
+ Into different types of maps as <String, Integer> pairs.
+
+What would you like L to be?: 10
+
+Enter # strings to insert into ULLMap: 100
+class lab8.ULLMap: 0.00 sec
+
+Enter # strings to insert into your BSTMap: 100
+class lab8.BSTMap: 0.00 sec
+
+Enter # strings to insert into Java's TreeMap: 100
+Java's Built-in TreeMap: 0.00 sec
+
+Would you like to try more timed-tests? (y/n)1000
+
+Enter # strings to insert into ULLMap: 1000
+class lab8.ULLMap: 0.00 sec
+
+Enter # strings to insert into your BSTMap: 1000
+class lab8.BSTMap: 0.00 sec
+
+Enter # strings to insert into Java's TreeMap: 1000
+Java's Built-in TreeMap: 0.02 sec
+
+Would you like to try more timed-tests? (y/n)y
+
+Enter # strings to insert into ULLMap: 10000
+class lab8.ULLMap: 0.33 sec
+
+Enter # strings to insert into your BSTMap: 10000
+class lab8.BSTMap: 0.02 sec
+
+Enter # strings to insert into Java's TreeMap: 10000
+Java's Built-in TreeMap: 0.02 sec
+
+Would you like to try more timed-tests? (y/n)y
+
+Enter # strings to insert into ULLMap: 50000
+--Stack Overflow -- couldn't add 50000 strings of length 10.
+
+Enter # strings to insert into your BSTMap: 50000
+class lab8.BSTMap: 0.05 sec
+
+Enter # strings to insert into Java's TreeMap: 50000
+Java's Built-in TreeMap: 0.03 sec
+
+Would you like to try more timed-tests? (y/n)
+
+InsertInOrderSpeedTest:
+
+ This program inserts lexicographically increasing Stringsinto Maps as <String, Integer> pairs.
+
+Enter # strings to insert into ULLMap: 1000
+class lab8.ULLMap: 0.03 sec
+
+Enter # strings to insert into BSTMap: 1000
+class lab8.BSTMap: 0.02 sec
+
+Enter # strings to insert into Java's TreeMap: 1000
+Java's Built-in TreeMap: 0.02 sec
+
+Would you like to try more timed-tests? (y/n): y
+
+Enter # strings to insert into ULLMap: 10000
+class lab8.ULLMap: 1.13 sec
+
+Enter # strings to insert into BSTMap: 10000
+class lab8.BSTMap: 1.44 sec
+
+Enter # strings to insert into Java's TreeMap: 10000
+Java's Built-in TreeMap: 0.02 sec
+
+Would you like to try more timed-tests? (y/n): n
+
+Process finished with exit code 0

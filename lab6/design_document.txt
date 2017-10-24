@@ -1,0 +1,106 @@
+2/23/2017
+Xintong (Robert) Wen
+Aaron Louis Pickar
+
+Classes:
+
+class Table:
+
+    Instance variables {
+
+    /** Quantification of rows and columns
+    int rows;
+    int cols;
+
+    /** Row based storage: an ArrayList of ArrayList<Object>
+    ArrayList<ArrayList<Object>> rowStore;
+
+    /** Overhead storage of column headers
+    ArrayList<ColumnHeader> colHeaders;
+    }
+
+    Constructor {
+
+    /** args is a String[] of column headers - {"X int", "Y int", "Z int"}
+    Table(String[] args);
+    }
+
+    /** Creates blank table
+    Table();
+
+    Methods {
+
+    /** Converts String[] of values into a new ArrayList<Object> to be added as row
+      * Parses strings into proper object type according to ColumnHeader
+    void addRow(String[] values);
+
+    /** Adds ArrayList as row to Table instance
+    void addRow(ArrayList<Object> row);
+
+    /** Joins two tables, covers inner join case
+    static Table join(Table t1, Table t2);
+
+    /** Cartesian cross product join, can be called upon by join
+    static Table cartJoin(Table t1, Table t2);
+
+    /** Prints spring representation of table
+    static void print(Table t1);
+    }
+
+    /** Takes in a column and adds to table, converting into row based storage
+    void addCol(Column<Object> col);
+
+    /** Returns new Table based on selected columns
+    static Table select(String[] colNames)
+
+class ColumnHeader:
+
+    Instance variables {
+
+    /** Given representation of column
+    String stringrep;
+
+    /** Given name of column
+    String name;
+
+    /** Type of data stored by column
+    Class type;
+    }
+
+    Constructors {
+
+    /** Construction based on array such as {"X", "int"}
+    ColumnHeader(String[] args);
+
+    /** Construction based on String such as "X int"
+    ColumnHeader(String args);
+    }
+
+    Methods {
+
+    /** Returns correct type based on given string
+      * Ex checkType("int") -> Integer.class
+    Class checkType(String args)
+    }
+
+class Column<T> extends ArrayList<T>:
+
+    Instance variables {
+
+    /** ColumnHeader to store details
+    ColHeader header;
+    }
+
+    Constructor {
+    /** Creates new Column and assigns given ColumnHeader;
+    Column(ColumnHeader header);
+    }
+
+
+/** Used to handle "where" clauses
+  * Unary, binary
+class Comparator:
+
+/** Used to handle column operations
+  * Unary, binary
+class Operation:
